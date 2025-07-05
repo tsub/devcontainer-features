@@ -1,0 +1,31 @@
+{
+  "name": "my-feature",
+  "id": "my-feature",
+  "version": "1.0.0",
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/go": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers-extra/features/terraform-ls-asdf:2": {},
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {},
+    "ghcr.io/tsub/autoForward/auto-forward": {}
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.config/gh/hosts.yml,target=/home/vscode/.config/gh/hosts.yml,type=bind",
+    "source=${localEnv:HOME}/.config/gh/config.yml,target=/home/vscode/.config/gh/config.yml,type=bind",
+    "source=${localEnv:HOME}/.config/git/config,target=/home/vscode/.config/git/config,type=bind",
+    "source=${localEnv:HOME}/.config/git/ignore,target=/home/vscode/.config/git/ignore,type=bind",
+    "source=${localEnv:HOME}/.config/git/commit-messages,target=/home/vscode/.config/git/commit-messages,type=bind",
+    "source=${localEnv:HOME}/.config/git/config-local,target=/home/vscode/.config/git/config-local,type=bind",
+    "source=${localEnv:HOME}/.bin,target=/home/vscode/.bin,type=bind",
+    "source=${localEnv:HOME}/.ssh/id_rsa,target=/home/vscode/.ssh/id_rsa,type=bind",
+    "source=${localEnv:HOME}/.claude,target=/home/vscode/.claude,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.claude.json,target=/home/vscode/.claude.json,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.config/github-copilot,target=/home/vscode/.config/github-copilot,type=bind"
+  ],
+  "containerEnv": {
+    "REMOTE_CONTAINERS": "true",
+    "TERM": "screen-256color",
+    "BROWSER": "xdg-open",
+    "SHELL": "/usr/bin/fish"
+  }
+}
