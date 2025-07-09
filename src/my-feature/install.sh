@@ -8,7 +8,7 @@ npm i -g yaml-language-server # for neovim
 npm i -g @aku11i/phantom
 npm i -g ccmanager
 npm i -g ccusage
-npm i -g reviewit
+npm i -g difit
 
 # See: https://zenn.dev/st_little/articles/permission-denied-on-sed-command
 wget -P /tmp https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz \
