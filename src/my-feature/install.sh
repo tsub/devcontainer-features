@@ -23,6 +23,7 @@ su "${_REMOTE_USER}" -c 'mkdir -p ~/.ssh'
 su "${_REMOTE_USER}" -c 'mkdir -p ~/.config/gh'
 su "${_REMOTE_USER}" -c 'mkdir -p ~/.config/git'
 su "${_REMOTE_USER}" -c 'mkdir -p ~/.config/fish'
+su "${_REMOTE_USER}" -c 'mkdir -p ~/.claude'
 su "${_REMOTE_USER}" -c 'touch ~/.config/fish/config.fish'
 
 # fish の補完を設定
