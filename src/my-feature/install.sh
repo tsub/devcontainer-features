@@ -4,6 +4,7 @@ sudo apt update -y # for dotfiles
 sudo apt install -y file libmagic1 libmagic-mgc # for fish
 # echo 'legacy_version_file = yes' > ~/.asdfrc
 go install github.com/Ladicle/git-prompt@latest # for fish theme
+go install github.com/k1LoW/git-wt@latest
 npm i -g yaml-language-server # for neovim
 npm i -g @aku11i/phantom
 npm i -g ccmanager
