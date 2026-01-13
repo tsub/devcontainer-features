@@ -11,17 +11,63 @@
     "ghcr.io/va-h/devcontainers-features/uv:1": {}
   },
   "mounts": [
-    "source=${localEnv:HOME}/.config/gh/hosts.yml,target=/home/vscode/.config/gh/hosts.yml,type=bind",
-    "source=${localEnv:HOME}/.config/gh/config.yml,target=/home/vscode/.config/gh/config.yml,type=bind",
-    "source=${localEnv:HOME}/.config/git/config,target=/home/vscode/.config/git/config,type=bind",
-    "source=${localEnv:HOME}/.config/git/ignore,target=/home/vscode/.config/git/ignore,type=bind",
-    "source=${localEnv:HOME}/.config/git/commit-messages,target=/home/vscode/.config/git/commit-messages,type=bind",
-    "source=${localEnv:HOME}/.config/git/config-local,target=/home/vscode/.config/git/config-local,type=bind",
-    "source=${localEnv:HOME}/.bin,target=/home/vscode/.bin,type=bind",
-    "source=${localEnv:HOME}/.ssh/id_rsa,target=/home/vscode/.ssh/id_rsa,type=bind",
-    "source=${localEnv:HOME}/.claude,target=/home/vscode/.claude,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.claude.json,target=/home/vscode/.claude.json,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.config/github-copilot,target=/home/vscode/.config/github-copilot,type=bind"
+    {
+      "source": "${localEnv:HOME}/.config/gh/hosts.yml",
+      "target": "/home/vscode/.config/gh/hosts.yml",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}/.config/gh/config.yml",
+      "target": "/home/vscode/.config/gh/config.yml",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}/.config/git/config",
+      "target": "/home/vscode/.config/git/config",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}/.config/git/ignore",
+      "target": "/home/vscode/.config/git/ignore",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}/.config/git/commit-messages",
+      "target": "/home/vscode/.config/git/commit-messages",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}/.config/git/config-local",
+      "target": "/home/vscode/.config/git/config-local",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}/.bin",
+      "target": "/home/vscode/.bin",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}/.ssh/id_rsa",
+      "target": "/home/vscode/.ssh/id_rsa",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}/.claude",
+      "target": "/home/vscode/.claude",
+      "type": "bind",
+      "consistency": "cached"
+    },
+    {
+      "source": "${localEnv:HOME}/.claude.json",
+      "target": "/home/vscode/.claude.json",
+      "type": "bind",
+      "consistency": "cached"
+    },
+    {
+      "source": "${localEnv:HOME}/.config/github-copilot",
+      "target": "/home/vscode/.config/github-copilot",
+      "type": "bind"
+    }
   ],
   "containerEnv": {
     "REMOTE_CONTAINERS": "true",
